@@ -4,6 +4,17 @@ The design is tested on Digilent's Nexys 3 FPGA board.
 
 If you want to change the image, Matlab/Octave code is also shared that scales an image and converts it to hex file that is used to initialize BRAM.
 
+# Intructions
+Create a project in Xilinx ISE and select correct part number. 
+
+Add verilog and UCF files to project.
+
+Copy temph.txt file in project directory.
+
+Synthesize the design, generate bistream, program FPGA and it should display an image if VGA is connected.
+
+For boards other than Nexys 3, you will need to change UCF file as per that board.
+
 Design is explained (in Urdu/Hindi language) in following video
 
 [![VGA display from Image in BRAM](https://img.youtube.com/vi/o46ejBICdhw/0.jpg)](https://www.youtube.com/watch?v=o46ejBICdhw)
