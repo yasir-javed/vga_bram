@@ -7,3 +7,7 @@ If you want to change the image, Matlab/Octave code is also shared that scales a
 Design is explained (in Urdu/Hindi language) in following video
 
 [![VGA display from Image in BRAM](https://img.youtube.com/vi/o46ejBICdhw/0.jpg)](https://www.youtube.com/watch?v=o46ejBICdhw)
+
+Design of barebones VGA controller used in above video is explained (in Urdu/Hindi language) in following video
+
+[![VGA Controller Design](https://img.youtube.com/vi/UqdIBD4pJIU/0.jpg)](https://www.youtube.com/watch?v=UqdIBD4pJIU)
