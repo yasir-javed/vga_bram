@@ -1,4 +1,4 @@
-# vga_bram
+# VGA Controller that displays an image from FPGA Bram
 This is a 640x480 VGA controller that displays an image of 256x256 of pixels in 256-color (8bits). 
 The design is tested on Digilent's Nexys 3 FPGA board.
 
