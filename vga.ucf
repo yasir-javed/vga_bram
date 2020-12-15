@@ -1,0 +1,30 @@
+NET "clk"            LOC = "V10" | IOSTANDARD = "LVCMOS33";   #Bank = 2, pin name = IO_L30N_GCLK0_USERCCLK,            Sch name = GCLK
+Net "clk" TNM_NET = sys_clk_pin;
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 100000 kHz;
+
+
+NET "reset" LOC= "B8"; # Bank = 1 , Pin name = IP , Type = INPUT , Sch name = BTN0
+
+# Pin assignment for VGA demo 
+# Connected to Nexys 3 
+ NET "red<0>"   LOC= "U7"; # Bank = 2 , Pin name = IO/D5 , Type = DUAL , Sch name = RED0
+ NET "red<1>"   LOC= "V7"; # Bank = 2 , Pin name = IO_L10N_2 , Type = I/O , Sch name = RED1
+ NET "red<2>"   LOC= "N7"; # Bank = 2 , Pin name = IO_L10P_2 , Type = I/O , Sch name = RED2
+ NET "green<0>" LOC= "P8"; # Bank = 2 , Pin name = IO_L09N_2 , Type = I/O , Sch name = GRN0
+ NET "green<1>" LOC= "T6"; # Bank = 2 , Pin name = IO_L09P_2 , Type = I/O , Sch name = GRN1
+ NET "green<2>" LOC= "V6"; # Bank = 2 , Pin name = IO_L05N_2 , Type = I/O , Sch name = GRN2
+ NET "blue<0>"  LOC= "R7"; # Bank = 2 , Pin name = IO/VREF_2 , Type = VREF , Sch name = BLU1
+ NET "blue<1>"  LOC= "T7"; # Bank = 2 , Pin name = IO_L03P_2/DOUT/BUSY , Type = DUAL , Sch name = BLU2
+ 
+ NET "hsync" LOC= "N6" | PULLUP; # Bank = 2 , Pin name = IO_L03N_2/MOSI/CSI_B , Type = DUAL , Sch name = HSYNC
+ NET "vsync" LOC= "P7" | PULLUP; # Bank = 2 , Pin name = IO_L01P_2/CSO_B , Type = DUAL , Sch name = VSYNC
+
+
+NET "sw<0>" LOC = "T10"; # Bank = 1, Pin name = IP, Type = INPUT, Sch name = SW0
+NET "sw<1>" LOC = "T9"; # Bank = 1, Pin name = IP/VREF_1, Type = VREF, Sch name = SW1
+NET "sw<2>" LOC = "V9"; # Bank = 1, Pin name = IP, Type = INPUT, Sch name = SW2
+NET "sw<3>" LOC = "M8"; # Bank = 1, Pin name = IP, Type = INPUT, Sch name = SW3
+NET "sw<4>" LOC = "N8"; # Bank = 1, Pin name = IP, Type = INPUT, Sch name = SW4
+NET "sw<5>" LOC = "U8"; # Bank = 1, Pin name = IP, Type = INPUT, Sch name = SW5
+NET "sw<6>" LOC = "V8"; # Bank = 1, Pin name = IP, Type = INPUT, Sch name = SW6
+NET "sw<7>" LOC = "T5"; # Bank = 1, Pin name = IP, Type = INPUT, Sch name = SW7
